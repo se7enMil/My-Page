@@ -1,0 +1,125 @@
+/* 设置所有元素的边距、内边距和盒模型为0 */
+
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 设置body元素的背景图片、位置、重复、附着和大小 */
+body {
+	background-image: url("../img/main.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* 设置show_time类的元素的高度、左边距、定位、底部和左侧 */
+.show_time {
+	height: 80px;
+	margin-left: 30px;
+	position: fixed;
+	bottom: 45px;
+	left: 0;
+}
+
+/* 设置time类的元素的字体大小、高度、文本阴影和颜色 */
+.time {
+	font-size: 5em;
+	height: 80px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	color: white;
+}
+
+/* 设置login_button类的元素的宽度、高度、定位、底部和水平居中 */
+.login_button {
+	width: 130px;
+	height: 50px;
+	position: fixed;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* 设置show_login_button类的元素的宽度、高度、圆角、显示方式、边框、背景颜色、颜色和字体大小 */
+.show_login_button {
+	width: 100px;
+	height: 34px;
+	border-radius: 20px;
+	display: inline-block;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.25);
+	color: white;
+	font-size: 20px;
+}
+
+/* 设置show_login_button类的元素内的img元素的宽度、高度和适应方式 */
+.show_login_button img {
+	width: 30%;
+	height: auto;
+	object-fit: cover;
+
+}
+
+/* 设置show_login_button类的元素内的img元素在鼠标悬停时的放大效果 */
+.show_login_button img:hover {
+	 transition: transform 0.3s;
+	transform: scale(1.1);
+}
+
+/* 定义一个名为bounce的动画，用于让按钮上下跳动 */
+@keyframes bounce {
+
+	0%,
+	20%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10% {
+		transform: translateY(-15px);
+	}
+
+	30%,
+	50% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-8px);
+	}
+
+	60%,
+	80% {
+		transform: translateY(0);
+	}
+
+}
+
+/* 设置show_login_button类的元素使用bounce动画，持续3秒，无限循环 */
+.show_login_button {
+	animation: bounce 3s infinite;
+}
+
+.Weather{
+	margin-top:880px;
+	margin-left:250px;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img//太阳_sun.png);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: center;
+
+}
+.temperss{
+	width: 50px;
+	height: 25px;
+
+	margin-top: -25px;
+	margin-left: 307px;
+}
+.temperss p{
+	color: white;
+}

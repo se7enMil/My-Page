@@ -1,0 +1,10 @@
+var a,b,c,d,e,f,g;
+                a = 6.18;
+                b = a * 2;
+                c = a + b;
+                d = c / b + a;
+                e = c - d * b + a;
+                f = e + d /c - b * a;
+                g = f * e - d + c * b + a;
+                a = g * g;
+                a = Math.floor(a);
